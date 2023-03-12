@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+body{
+    font-family: sans-serif;
+    height: 150vh;
+}
+.top{
+    height: 130px;
+}
+.title{
+    height: 30%;
+    margin-left: 50px;
+    padding: 10px;
+}
+.title h1{
+    color: red;
+    font-size: 22px;
+}
+.title span, .title p{
+    color: blue;
+}
+.title p{
+    font-size: 12px;
+}
+.navi{
+    height: 30%;
+    background-color: blue;
+    border-bottom: 3px solid red;
+    display: flex;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    margin-left: 60px;
+}
+.navi nav a{
+    text-decoration: none;
+    color: white;
+    flex-grow: 1;
+    font-size: 13px;
+}
+.navi nav a:hover{
+    color: red;
+}
+.navi .icons{
+
+    right: 60px;
+    height: 50px;
+    width: 50px;
+    background: red;
+    bottom: 0px;
+    position: absolute;
+}
+.navi .icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    padding: 15px;
+}
+.null{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    padding: 10px;
+    width: 90.5%;
+}
+.null .box{
+    height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.null .box > div{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: white;
+}
+.null p{
+    color: red;
+    margin-left: 10px;
+}
+.null .icon{
+    margin-left: auto;
+    height: 25px;
+    width: 25px;
+    fill: blue;
+}
+.middle{
+    height: 430px;
+    margin-left: 60px;
+    margin-top: 25px;
+    /* background: #000; */
+    width: 90.5%;
+    overflow: hidden;
+    display: flex;
+}
+.scrollimg{
+    width: 50%;
+    overflow: hidden;
+}
+.longimg{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 25%;
+}
+.doubleimg{
+    width: 30%;
+}
+.scrollimg .bike{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.scrollimg .bike img{
+    height: 100%;
+    width: 100%;
+}
+.scrollimg .bike p{
+    position: absolute;
+    top: 280px;
+    color: white;
+    left: 15px;
+}
+.scrollimg .boxes{
+    margin-top: 5px;
+    display: flex;
+    height: 20%;
+    overflow: hidden;
+}
+.scrollimg .boxes > div{
+    height: 100%;
+    width: 25%;
+}
+.scrollimg .boxes > div:nth-child(2), .scrollimg .boxes > div:nth-child(3), .scrollimg .boxes > div:nth-child(4){
+    /* margin-right: 5px; */
+    margin-left: 5px;
+}
+.scrollimg .boxes > div img{
+    height: 100%;
+    width: 100%;
+}
+.longimg{
+    position: relative;
+}
+.longimg p{
+    position: absolute;
+    color: white;
+    top: 350px;
+    left: 10px;
+}
+.longimg img{
+    height: 100%;
+    width: 100%;
+}
+.doubleimg > div{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.doubleimg > div:nth-child(2){
+    margin-top: 5px;
+}
+.doubleimg > div p{
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    color: white;
+}
+.doubleimg > div img{
+    height: 100%;
+    width: 100%;
+}
+p, a{
+    font-weight: bold;
+}
+.business{
+    margin-top: 5px;
+    margin-left: 60px;
+    height: 30px;
+    width: 64%;
+    display: flex;
+}
+.business .bar{
+    display: flex;
+}
+.business .bar > div{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.business .bar > div:nth-child(1){
+    height: 100%;
+    width: 5px;
+    margin-right: 5px;
+}
+.business .bar > div:nth-child(2){
+    height: 100%;
+    width: 90px;
+    font-size: 15px;
+    color: white;
+}
+.business .text{
+    margin-left: auto;
+    color: red;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.business .text .icon{
+    height: 15px;
+    width: 15px;
+    fill: red;
+}
+.bottom{
+    height: 300px;
+    width: 90.5%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 60px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.people{
+    width: 50%;
+    margin-right: 5px;
+    display: flex;
+    overflow: hidden;
+}
+.people > div{
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.person img{
+    width: 100%;
+    height: 70%;
+}
+.person .icons{
+    display: flex;
+    margin-top: 25px;
+    height: 25px;
+    width: 100%;
+    color: red;
+    font-size: 12px;
+}
+.person .date, .boxes .date{
+    display: flex;
+}
+.person .icons .stars{
+    margin-left: auto;
+    display: flex;
+    width: 10px;
+}
+
+.person .icons .icon, .boxes .date .icon, .boxes .stars .icon{
+    height: 12px;
+    width: 12px;
+    fill: red;
+}
+.boxes .stars{
+    display: flex;
+}
+.boxes .date{
+    color: red;
+    margin-top: 10px;
+}
+.boxes > div{
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30%;
+    overflow: hidden;
+    display: flex;
+    font-size: 13px;
+}
+.boxes > div img{
+    height: 100%;
+    margin-right: 5px;
+    width: 30%;
+}
+.building{
+    width: 28%;
+    overflow: hidden;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+.building p{
+    font-size: 13px;
+    margin: 5px;
+}
+.building > div{
+    height: 45%;
+}
+.building > div img{
+    height: 100%;
+    width: 100%;
+}
+.advert{
+    width: 30%;
+}
+.advert > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    background-color: blue;
+    margin: 5px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+.advert > div:nth-child(2){
+    display: flex;
+    height: 90%;
+}
+
+.advert > div:nth-child(2) > div > div{
+    width: 100px;
+    margin: 5px;
+    height: 30%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: blue;
+    font-size: 10px;
+}
+.advert .icon{
+    width: 23px;
+    height: 23px;
+    fill: blue;
+    margin-bottom: 10px;
+}

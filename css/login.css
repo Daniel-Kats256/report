@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(white,rgb(166, 230, 252),rgb(179, 149, 250));
+    height: 120vh;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+form.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 30vh; */
+    position: relative;
+}
+form.login .logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    top: -75px;
+    overflow: hidden;
+}
+form.login .logo img{
+    height: 100%;
+    width: 100%;
+}
+form.login > div{
+    width: 400px;
+    /* height: 100%; */
+    border-radius: 20px;
+    box-shadow: 0 0 7px gray;
+}
+form.login > div div:nth-child(2), form.login > div div:nth-child(1){
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+form.login > div div:nth-child(2) input{
+    height: 25px;
+    background: none;
+    margin: 5px;
+    border: none;
+   border-bottom: 2px solid black;
+    padding: 10px 15px;
+}
+button {
+    background: none;
+    width: 140px;
+    height: 30px;
+    margin: 15px;
+    box-shadow: 0 0 7px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+}
+a:hover{
+    text-decoration: underline;
+    color: darkblue;
+    transform: scale(1.05);
+}

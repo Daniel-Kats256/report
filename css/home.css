@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+body{
+    height: 120vh;
+    font-family: sans-serif;
+}
+.top{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(1, 17, 236);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.top > div{
+    display: flex;
+    align-items: center;
+}
+.menu, .about{
+    position: relative;
+}
+.about, .top a{
+    display: flex;
+}
+.drop2{
+    left: 100%;
+}
+.dropdown, .drop2{
+    transform: scale(0);
+    transition-delay: 1s;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    background-color: white;
+}
+
+.top .menu:hover .dropdown, .dropdown .about:hover .drop2{
+    transform: scale(1);
+    transition: 0s;
+}
+nav{
+    font-size: 13px;
+    display: flex; 
+    flex-direction: column;
+}
+nav a:hover, .about:hover{
+    background-color: #ea00ff;
+    color: white;
+}
+.drop2 {
+    margin-left: 127px;
+}
+nav a, .about{
+    color: black;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+    box-shadow: 0 0 5px #ccc;
+
+}
+.top a{
+    text-decoration: none;
+}
+.logo{
+    margin-left: auto;
+
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.middle{
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.middle > div{
+    /* position: absolute; */
+    width: 100%;
+
+}
+.text1{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.text1 > img{
+    height: 100%;
+    width: 100%;
+}
+.opacity{
+    position: absolute;
+    width: 100%;
+    top: 0; 
+    height: 100%;
+}
+.opacity > div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    color: #000;
+}
+.opacity .bg{
+    background-color: white;
+    opacity: 0.5;
+}
+.opacity h1{
+    font-size: 50px;
+    
+}
+.opacity p{
+    font-size: 20px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.text > div > img{
+    width: 300px;
+    height: 300px;
+    margin: 5PX;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+.text h2{
+    height: 90px;
+    text-align: center;
+}
+footer{
+    height: 550px;
+    background-color: #ea00ff;
+    margin-top: 5px;
+    padding: 2px;
+}
+footer .contact, .follow, .quicklinks, .copy{
+    height: 60px;
+    padding: 40px 50px;
+    border-top: 1px solid #ccc;
+}
+
+footer .contact p, .social{
+    margin-left: 40px;
+}
+footer .contact a, footer a{
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.contact a > div{
+    margin-left: 15px;
+}
+.quicklinks > div{
+    display: flex;
+    margin-left: 25px;
+}
+.quicklinks > div a{
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+}
+.quicklinks > div a:hover{
+    background-color: black;
+    color: white;
+}
+.follow .social{
+    display: flex;
+}
+.social{
+    width: 230px;
+    height: 30px;
+    padding-top: 20px;
+}
+.social > div{
+    flex-grow: 1;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: wheat;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    fill: #fff;
+    justify-content: center;
+    
+}
+.icon span, .icon1 span{
+    width: 15px;
+}
+.icon:hover{
+    fill: black;
+}
+.icon1{
+    fill: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+}
+.icon1:hover{
+    fill: #fff;
+}
+@media screen and (max-width: 800px)  {
+    body{
+        max-width: 1700px;
+        max-height: 300vh;
+    }
+    .top{
+        width: 800px;
+    }
+    .top .logo{
+        margin-left: 30px;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .text1{
+        width: 800px;
+    }
+    .text1{
+        position: absolute;
+        top: 0;
+        justify-content: center;
+        display: flex;
+    }
+    .text{
+        position: absolute;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+        width: 800px;
+    }
+    footer{
+        margin-top: 750px;
+        width: 800px;
+    }
+    footer .quicklinks > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .quicklinks{
+        height: 70px;
+        padding-top: 10px;
+    }
+    .copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

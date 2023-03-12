@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.top{
+    height: 450px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(55, 55, 158);
+    display: flex;
+    justify-content: center;
+}
+.top .boxes{
+    display: flex;
+    position: absolute;
+    top: 85%;
+    width: 60%;
+    height: 150px;
+}
+.top .boxes > div{
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.why{
+    width: 50%;
+    height: 170px;
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 105px;
+}
+.image{
+    width: 65%;
+    height: 300px;
+    display: flex;
+    margin: 25px;
+}
+.image .left, .right{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.right{
+    padding: 12px;
+}
+.left > div{
+    width: 85%;
+    height: 85%;
+    position: absolute;
+}
+.left > div:nth-child(1){
+    background-color: black;
+
+}
+.left > div:nth-child(2){
+    background-color: blue;
+    bottom: 40px;
+    left: 30px;
+    box-shadow: 0 0  28px rgb(17, 17, 17);
+}
+.left > div:nth-child(3){
+    box-shadow: 0 0 28px rgb(17, 17, 17);
+    background-color: antiquewhite;
+    top: 30px;
+    left: 50px;
+}
+.freig{
+    height: 400px;
+    width: 100%;
+    background-color: lightblue;
+    /* margin: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .freig > div{
+    height: 70%;
+    width: 21%;
+    margin: 5px;
+    border: 1px solid black;
+ }
+.unmat{
+    height: 550px;
+    width: 100%;
+    background-color: rgb(30, 13, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.unmat > div{
+    width: 80%;
+    height: 100%;   
+    flex-wrap: wrap;
+}
+.unmat > div > div{
+    height: 40%;
+    width: 25%;
+    margin: 15px;
+    border: 1px solid rgb(247, 243, 243);
+}
+.fot{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(11, 5, 90);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fot > div{
+    width: 80%;
+    height: 100%;   
+    flex-wrap: wrap;
+}
+.fot > div > div{
+    height: 80%;
+    width: 20%;
+    margin: 15px;
+    border: 1px solid rgb(247, 243, 243);
+}
